@@ -1,9 +1,12 @@
 package demjanov.av.ru.mvp_app;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity implements MainView, View.OnClickListener {
@@ -42,17 +45,19 @@ public class MainActivity extends AppCompatActivity implements MainView, View.On
 
     }
 
+
     @Override
     public void setButtonText(int btnIndex, int value) {
+        String str = this.getResources().getString(R.string.numbers) + value;
         switch (btnIndex){
             case 1:
-                btnCounter1.setText(R.string.numbers + value);
+                btnCounter1.setText(str);
                 break;
             case 2:
-                btnCounter2.setText(R.string.numbers + value);
+                btnCounter2.setText(str);
                 break;
             case 3:
-                btnCounter3.setText(R.string.numbers + value);
+                btnCounter3.setText(str);
                 break;
         }
 

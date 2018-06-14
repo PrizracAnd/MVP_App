@@ -15,7 +15,7 @@ public class Presenter {
         int newModelValue = calcNewModelValue(btnIndex - 1);
         mModel.setElementValueAtIndex(btnIndex - 1, newModelValue);
         view.setButtonText(btnIndex, newModelValue);
-        
+
     }
 
 }
