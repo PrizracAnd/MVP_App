@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP_App</string>
+    <string name="counter1">Counter 1</string>
+    <string name="counter2">Counter 2</string>
+    <string name="counter3">Counter 3</string>
+    <string name="numbers">Numbers = </string>
+    <string name="numbers_0">Numbers = 0</string>
+</resources>
